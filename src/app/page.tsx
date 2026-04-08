@@ -1305,19 +1305,19 @@ function HeroSection({ onNavigate }: { onNavigate: (view: ViewMode, href?: strin
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+          className="mt-10 flex flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <Button
             size="lg"
             onClick={() => onNavigate("products")}
-            className="bg-red-600 px-8 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-red-700 hover:shadow-xl"
+            className="bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-red-700 hover:shadow-xl sm:px-8 sm:text-base"
           >
             Lihat Koleksi
           </Button>
           <Button
             size="lg"
             onClick={() => onNavigate("home", "#kontak")}
-            className="border-2 border-white/40 bg-transparent px-8 py-3 text-base font-semibold text-white transition-all hover:border-white hover:bg-white/10 hover:text-white"
+            className="border-2 border-white/40 bg-transparent px-5 py-3 text-sm font-semibold text-white transition-all hover:border-white hover:bg-white/10 hover:text-white sm:px-8 sm:text-base"
           >
             Hubungi Kami
           </Button>
