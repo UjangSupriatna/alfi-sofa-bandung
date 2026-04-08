@@ -2441,6 +2441,7 @@ export default function Home() {
             transition={{ duration: 0.3 }}
           >
             <HeroSection onNavigate={handleNavigate} />
+            <SocialMediaSection />
             <AboutSection />
             <FeaturedProductsPreview onNavigate={handleNavigate} />
             <FeaturesSection />
