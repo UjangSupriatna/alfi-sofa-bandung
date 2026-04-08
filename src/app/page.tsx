@@ -1381,13 +1381,13 @@ function AboutSection() {
                 kompetitif.
               </p>
 
-              <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <div className="mt-8 grid grid-cols-3 gap-3 sm:gap-4">
                 {STATS.map((stat) => (
-                  <div key={stat.label} className="rounded-xl bg-red-50 p-4 text-center">
-                    <p className="text-2xl font-extrabold text-red-600 sm:text-3xl">
+                  <div key={stat.label} className="rounded-xl bg-red-50 px-2 py-4 text-center sm:px-4 sm:py-5">
+                    <p className="text-xl font-extrabold text-red-600 sm:text-3xl">
                       {stat.value}
                     </p>
-                    <p className="mt-1 text-xs text-gray-500 sm:text-sm">{stat.label}</p>
+                    <p className="mt-1 text-[10px] leading-tight text-gray-500 sm:text-sm">{stat.label}</p>
                   </div>
                 ))}
               </div>
@@ -2281,16 +2281,39 @@ function Footer({ onNavigate }: { onNavigate: (view: ViewMode) => void }) {
 /* ───────────────────────── Floating WhatsApp Button ────────────────────────── */
 
 function FloatingWhatsApp() {
+  const [showTooltip, setShowTooltip] = useState(false);
+
   return (
-    <a
-      href="https://wa.me/6285198778338?text=Halo%20Alfi%20Sofa,%20saya%20ingin%20bertanya%20tentang%20sofa."
-      target="_blank"
-      rel="noopener noreferrer"
-      className="animate-pulse-green fixed bottom-6 right-6 z-50 flex size-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-transform hover:scale-110 hover:bg-green-600"
-      aria-label="Chat WhatsApp"
-    >
-      <MessageCircle className="size-7" />
-    </a>
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+      {/* Tooltip */}
+      <div
+        className={`transition-all duration-300 ${showTooltip ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0 pointer-events-none"}`}
+      >
+        <div className="rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-gray-700 shadow-lg border border-gray-100 max-w-[220px] whitespace-nowrap">
+          Konsultasi &amp; Diskusi via WhatsApp 24/7
+          <div className="absolute -right-2 top-1/2 -translate-y-1/2 h-0 w-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[8px] border-l-white"></div>
+        </div>
+      </div>
+      {/* Button */}
+      <a
+        href="https://wa.me/6285198778338?text=Halo%20Alfi%20Sofa,%20saya%20ingin%20bertanya%20tentang%20sofa."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#20BD5A]"
+        aria-label="Chat WhatsApp"
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+      >
+        {/* Ping animation ring */}
+        <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#25D366] opacity-30"></span>
+        {/* Second ping ring (delayed) */}
+        <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#25D366] opacity-20" style={{ animationDelay: "0.5s" }}></span>
+        {/* WhatsApp Logo SVG */}
+        <svg viewBox="0 0 32 32" className="relative size-7 drop-shadow-sm" fill="currentColor">
+          <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.132 6.744 3.054 9.378L1.056 31.2l6.062-1.95a15.9 15.9 0 0 0 8.886 2.692C24.826 31.942 32 24.766 32 16.004S24.826 0 16.004 0zm9.35 22.614c-.392 1.106-2.286 2.05-3.188 2.178-.822.116-1.86.166-3.002-.192a27.3 27.3 0 0 1-2.736-1.014c-4.816-2.086-7.968-6.964-8.212-7.296-.236-.334-1.936-2.578-1.936-4.918s1.226-3.486 1.66-3.964c.434-.478.95-.6 1.266-.6.316 0 .632.002.908.016.292.016.682-.11 1.066.814.392.942 1.332 3.252 1.45 3.488.116.236.196.514.04.828-.156.314-.236.508-.47.786-.236.278-.496.622-.708.834-.236.236-.482.492-.206.966.274.474 1.222 2.016 2.624 3.266 1.802 1.61 3.322 2.108 3.796 2.344.474.236.75.196 1.026-.118.278-.316 1.188-1.384 1.504-1.858.316-.474.632-.392 1.066-.236.434.156 2.748 1.296 3.222 1.532.474.236.79.354.908.55.118.196.118 1.136-.274 2.244z"/>
+        </svg>
+      </a>
+    </div>
   );
 }
 
