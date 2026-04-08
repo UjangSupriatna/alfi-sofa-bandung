@@ -1230,7 +1230,7 @@ function Navbar({
                 <span className="sr-only">Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-80 overflow-y-auto">
+            <SheetContent side="right" className="w-72">
               <SheetHeader>
                 <SheetTitle className="text-left text-red-600">
                   ALFI SOFA BANDUNG
@@ -1247,80 +1247,6 @@ function Navbar({
                     </button>
                   </SheetClose>
                 ))}
-
-                {/* Kontak Info + Google Maps */}
-                <div className="mt-5 border-t border-gray-200 pt-5">
-                  <p className="mb-3 text-xs font-bold uppercase tracking-wider text-gray-500">Kontak</p>
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <div className="flex items-center gap-3">
-                      <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-red-50">
-                        <Phone className="size-4 text-red-500" />
-                      </div>
-                      <span>0851-9877-8338</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-red-50">
-                        <Clock className="size-4 text-red-500" />
-                      </div>
-                      <span>Sen - Sab, 08:00 - 17:00</span>
-                    </div>
-                  </div>
-
-                  {/* Google Maps */}
-                  <div className="mt-4 overflow-hidden rounded-xl border border-gray-200">
-                    <iframe
-                      src="https://maps.google.com/maps?q=ALFI+Sofa+Bandung+Jl+Warung+Awi+Cikadu+Cicangkang+Hilir+Cipongkor&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                      width="100%"
-                      height="140"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="Lokasi ALFI SOFA Bandung"
-                      className="w-full"
-                    />
-                  </div>
-                  <a
-                    href="https://maps.app.goo.gl/SJZeexv5cqkjYpB17"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-red-600 px-4 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-red-700"
-                  >
-                    <MapPin className="size-3.5" />
-                    Buka di Google Maps
-                  </a>
-                </div>
-
-                {/* Sosmed & Marketplace Icons */}
-                <div className="mt-5 border-t border-gray-200 pt-5">
-                  <p className="mb-3 text-xs font-bold uppercase tracking-wider text-gray-500">Sosmed & Marketplace</p>
-                  <div className="grid grid-cols-3 gap-3">
-                    <a href="https://www.instagram.com/alfisofa_bandung" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 p-3.5 transition-colors hover:border-red-200 hover:bg-red-50">
-                      <svg className="size-6 text-pink-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                      <span className="text-[11px] font-medium text-gray-600">Instagram</span>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61566388113783" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 p-3.5 transition-colors hover:border-red-200 hover:bg-red-50">
-                      <svg className="size-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                      <span className="text-[11px] font-medium text-gray-600">Facebook</span>
-                    </a>
-                    <a href="https://vt.tiktok.com/ZS98EPB7eVou4-vCxtO/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 p-3.5 transition-colors hover:border-red-200 hover:bg-red-50">
-                      <svg className="size-6 text-black" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.76 1.52V6.8a4.84 4.84 0 0 1-1-.11z"/></svg>
-                      <span className="text-[11px] font-medium text-gray-600">TikTok Shop</span>
-                    </a>
-                    <a href="https://youtube.com/@alfisofabandung" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 p-3.5 transition-colors hover:border-red-200 hover:bg-red-50">
-                      <svg className="size-6 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
-                      <span className="text-[11px] font-medium text-gray-600">YouTube</span>
-                    </a>
-                    <a href="https://shopee.co.id/gudang_sofa_bandung" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 p-3.5 transition-colors hover:border-red-200 hover:bg-red-50">
-                      <ShoppingBag className="size-6 text-orange-500" />
-                      <span className="text-[11px] font-medium text-gray-600">Shopee</span>
-                    </a>
-                    <a href="https://wa.me/6285198778338?text=Halo%20Alfi%20Sofa,%20saya%20ingin%20bertanya%20tentang%20sofa." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 rounded-xl border border-gray-100 bg-green-50 p-3.5 transition-colors hover:border-green-300 hover:bg-green-100">
-                      <svg className="size-6 text-green-600" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.132 6.744 3.054 9.378L1.056 31.2l6.062-1.95a15.9 15.9 0 0 0 8.886 2.692C24.826 31.942 32 24.766 32 16.004S24.826 0 16.004 0zm9.35 22.614c-.392 1.106-2.286 2.05-3.188 2.178-.822.116-1.86.166-3.002-.192a27.3 27.3 0 0 1-2.736-1.014c-4.816-2.086-7.968-6.964-8.212-7.296-.236-.334-1.936-2.578-1.936-4.918s1.226-3.486 1.66-3.964c.434-.478.95-.6 1.266-.6.316 0 .632.002.908.016.292.016.682-.11 1.066.814.392.942 1.332 3.252 1.45 3.488.116.236.196.514.04.828-.156.314-.236.508-.47.786-.236.278-.496.622-.708.834-.236.236-.482.492-.206.966.274.474 1.222 2.016 2.624 3.266 1.802 1.61 3.322 2.108 3.796 2.344.474.236.75.196 1.026-.118.278-.316 1.188-1.384 1.504-1.858.316-.474.632-.392 1.066-.236.434.156 2.748 1.296 3.222 1.532.474.236.79.354.908.55.118.196.118 1.136-.274 2.244z"/></svg>
-                      <span className="text-[11px] font-medium text-gray-600">WhatsApp</span>
-                    </a>
-                  </div>
-                </div>
               </nav>
             </SheetContent>
           </Sheet>
@@ -1455,6 +1381,37 @@ function AboutSection() {
                     <p className="mt-1 text-[10px] leading-tight text-gray-500 sm:text-sm">{stat.label}</p>
                   </div>
                 ))}
+              </div>
+
+              {/* Sosmed & Marketplace */}
+              <div className="mt-10">
+                <p className="mb-4 text-xs font-bold uppercase tracking-wider text-gray-400">Temukan Kami Di</p>
+                <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                    <a href="https://www.instagram.com/alfisofa_bandung" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-600 shadow-sm transition-all hover:border-pink-300 hover:text-pink-600 hover:shadow-md">
+                      <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                      Instagram
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61566388113783" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-600 shadow-sm transition-all hover:border-blue-300 hover:text-blue-600 hover:shadow-md">
+                      <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                      Facebook
+                    </a>
+                    <a href="https://vt.tiktok.com/ZS98EPB7eVou4-vCxtO/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-600 shadow-sm transition-all hover:border-gray-400 hover:text-black hover:shadow-md">
+                      <svg className="size-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.76 1.52V6.8a4.84 4.84 0 0 1-1-.11z"/></svg>
+                      TikTok Shop
+                    </a>
+                    <a href="https://youtube.com/@alfisofabandung" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-600 shadow-sm transition-all hover:border-red-300 hover:text-red-600 hover:shadow-md">
+                      <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+                      YouTube
+                    </a>
+                    <a href="https://shopee.co.id/gudang_sofa_bandung" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-gray-600 shadow-sm transition-all hover:border-orange-300 hover:text-orange-600 hover:shadow-md">
+                      <ShoppingBag className="size-5" />
+                      Shopee
+                    </a>
+                    <a href="https://wa.me/6285198778338?text=Halo%20Alfi%20Sofa,%20saya%20ingin%20bertanya%20tentang%20sofa." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-2.5 text-sm font-medium text-green-700 shadow-sm transition-all hover:border-green-400 hover:bg-green-100 hover:shadow-md">
+                      <svg className="size-5" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.132 6.744 3.054 9.378L1.056 31.2l6.062-1.95a15.9 15.9 0 0 0 8.886 2.692C24.826 31.942 32 24.766 32 16.004S24.826 0 16.004 0zm9.35 22.614c-.392 1.106-2.286 2.05-3.188 2.178-.822.116-1.86.166-3.002-.192a27.3 27.3 0 0 1-2.736-1.014c-4.816-2.086-7.968-6.964-8.212-7.296-.236-.334-1.936-2.578-1.936-4.918s1.226-3.486 1.66-3.964c.434-.478.95-.6 1.266-.6.316 0 .632.002.908.016.292.016.682-.11 1.066.814.392.942 1.332 3.252 1.45 3.488.116.236.196.514.04.828-.156.314-.236.508-.47.786-.236.278-.496.622-.708.834-.236.236-.482.492-.206.966.274.474 1.222 2.016 2.624 3.266 1.802 1.61 3.322 2.108 3.796 2.344.474.236.75.196 1.026-.118.278-.316 1.188-1.384 1.504-1.858.316-.474.632-.392 1.066-.236.434.156 2.748 1.296 3.222 1.532.474.236.79.354.908.55.118.196.118 1.136-.274 2.244z"/></svg>
+                      WhatsApp
+                    </a>
+                  </div>
               </div>
             </div>
           </FadeIn>
