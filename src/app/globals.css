@@ -135,7 +135,7 @@ html {
   display: none;
 }
 
-/* Marquee animation for social media icons */
+/* Marquee animation */
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -144,7 +144,6 @@ html {
     transform: translateX(-50%);
   }
 }
-
 .animate-marquee {
-  animation: marquee 15s linear infinite;
+  animation: marquee 18s linear infinite;
 }
