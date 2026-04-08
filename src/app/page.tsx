@@ -2243,7 +2243,7 @@ function Footer({ onNavigate }: { onNavigate: (view: ViewMode) => void }) {
               <li>
                 <a href="https://vt.tiktok.com/ZS98EPB7eVou4-vCxtO/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-red-400">
                   <svg className="size-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.76 1.52V6.8a4.84 4.84 0 0 1-1-.11z"/></svg>
-                  TikTok
+                  TikTok Shop
                 </a>
               </li>
               <li>
@@ -2258,12 +2258,7 @@ function Footer({ onNavigate }: { onNavigate: (view: ViewMode) => void }) {
                   Shopee
                 </a>
               </li>
-              <li>
-                <a href="https://tokopedia.com/@alfisofabandung" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-red-400">
-                  <ShoppingBag className="size-4 shrink-0" />
-                  Tokopedia
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
